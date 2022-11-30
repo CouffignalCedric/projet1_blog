@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #BEE1E5 */
+    background-color: #ebf0ea;
+opacity: 1;
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ebf0ea 5px ), 
+repeating-linear-gradient( #dedee555, #dedee5 );
+}
+
+/* variables */
+:root {
+    --primary-color: #81ec8a;
+    --font-size: 16px;
+    --second-color: #e6aa61;
+}
+
+/* media queries */
+/* @media (min-width: 400px){
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    main section{
+        flex:1;
+        min-width: 45%;
+        padding: 10px;
+        border: 1px solid black;
+}} */
+
+
+
+/* hearder nav */
+.logo {
+    width: 100px;
+    justify-content: flex-start;
+
+}
+
+.logoImg {
+    max-width: 25%;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    border: 1px solid var(--second-color);
+
+}
+
+header {
+
+    background-color: #9cefbe;
+    margin: 10px;
+    padding: 5px;
+
+    border: 1px solid var(--second-color);
+}
+
+
+.title {
+    color: var(--second-color);
+    font-size: 25px;
+    text-shadow: 4px 3px 4px  var(--second-color);
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+nav {
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+/* Main */
+main {
+
+
+    margin: 10px;
+
+}
+
+section {
+    border: 1px solid var(--primary-color);
+    border-radius: 10%;
+    margin-block: 25px;
+    box-shadow: -15px -11px 11px -2px rgba(236,170,68,0.64);
+}
+
+
+img{
+    width: 200px;
+    border: 4px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* INTRO */
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.imgItro {
+    width: 200px;
+    border: 2px solid var(--second-color);
+    
+}
+.texte-intro{
+    padding-inline: 10px;
+  text-align: center;
+  margin-block: 10px;
+}
+                /* Les Articles */
+.texte-article{
+    padding-inline: 10px;
+     text-align: center;
+    margin-block: 10px;
+}
+
+   
+/* Articles1 2 3 */
+
+#article1 ,#article2 ,#article3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.titleArticle{
+    color: var(--second-color);
+    font-size: 25px;
+    text-shadow: 4px 3px 4px var(--second-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Materiels */
+#materials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.title2{
+    
+   text-transform: uppercase;
+   color: var(--primary-color);
+   font-size: 25px;
+   text-shadow: 4px 3px 4px var(--second-color);
+   text-transform: uppercase;
+   text-align: center;
+     margin: 20px;
+
+}
+.img-mat{
+    
+}
+/* menu burger */
