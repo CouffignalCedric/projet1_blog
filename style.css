@@ -5,9 +5,9 @@
 body {
     /* background-color: #BEE1E5 */
     background-color: #ebf0ea;
-opacity: 1;
-background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ebf0ea 5px ), 
-repeating-linear-gradient( #dedee555, #dedee5 );
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ebf0ea 5px ), 
+    repeating-linear-gradient( #dedee555, #dedee5 );
 }
 
 /* variables */
@@ -17,18 +17,7 @@ repeating-linear-gradient( #dedee555, #dedee5 );
     --second-color: #e6aa61;
 }
 
-/* media queries */
-/* @media (min-width: 400px){
-    main{
-        display: flex;
-        flex-wrap: wrap;
-    } 
-    main section{
-        flex:1;
-        min-width: 45%;
-        padding: 10px;
-        border: 1px solid black;
-}} */
+
 
 
 
@@ -103,6 +92,7 @@ img{
 /* INTRO */
 
 .intro {
+    /* width: 100%; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -115,13 +105,13 @@ img{
 }
 .texte-intro{
     padding-inline: 10px;
-  text-align: center;
-  margin-block: 10px;
+    text-align: center;
+    margin-block: 10px;
 }
                 /* Les Articles */
 .texte-article{
     padding-inline: 10px;
-     text-align: center;
+    text-align: center;
     margin-block: 10px;
 }
 
@@ -131,6 +121,7 @@ img{
 #article1 ,#article2 ,#article3{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 15px;
@@ -148,7 +139,9 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+    justify-content: space-between;
+    margin: auto;
+}
 }
 .title2{
     
@@ -164,4 +157,30 @@ img{
 .img-mat{
     
 }
+        /* footer */
+            footer{
+                background-color:none;
+                    margin : 10px;
+                    padding : 5px;
+                    border : 1px solid var(--second-color);
+                    text-align: center;
+                    font-weight: bold; 
+}
+/* media queries */
+@media (min-width: 400px){
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    main section{
+        
+        min-width: 45%;
+        padding: 10px;
+        margin: 20px;
+        border: 1px solid black;       
+}
+   
+    
+}
+
 /* menu burger */
