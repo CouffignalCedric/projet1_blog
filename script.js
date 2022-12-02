@@ -10,7 +10,8 @@ const text2 = document.querySelector('.text2');
 const imgMat3 = document.querySelector('.img3');
 const text3 = document.querySelector('.text3');
 
-// creation de l'evenemnt click image = image suivante
+// creation de l'evenemnt click image + texte = image +texte suivant
+
 imgMat1.addEventListener('click', function(){
   
   imgMat2.style.height = '100px';
