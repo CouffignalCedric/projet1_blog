@@ -14,7 +14,7 @@ const text3 = document.querySelector('.text3');
 
 imgMat1.addEventListener('click', function(){
   
-  imgMat2.style.height = '100px';
+  imgMat2.style.height = '300px';
   imgMat2.style.border = '4px solid';
   
   imgMat1.style.height = '0px';
@@ -26,7 +26,7 @@ imgMat1.addEventListener('click', function(){
 });
 imgMat2.addEventListener('click', function(){
   
-  imgMat3.style.height = '100px';
+  imgMat3.style.height = '300px';
   imgMat3.style.border = '4px solid';
   
   imgMat2.style.height = '0px';
@@ -37,7 +37,7 @@ imgMat2.addEventListener('click', function(){
 });
 imgMat3.addEventListener('click', function(){
   
-  imgMat1.style.height = '250px';
+  imgMat1.style.height = '300px';
   imgMat1.style.border = '4px solid';
   
   imgMat3.style.height = '0px';

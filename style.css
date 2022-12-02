@@ -139,8 +139,17 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: auto;
+    
+}
+.imgM{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
 }
 
 .title2{
@@ -155,11 +164,13 @@ img{
 
 }
 .text1{
-    font-size: 25px;
+    font-size: 20px;
+    text-transform: uppercase;
     text-align: center;
 }
 .text2{
     font-size: 0px;
+    text-transform: uppercase;
     text-align: center;
 }
 
