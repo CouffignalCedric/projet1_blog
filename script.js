@@ -21,7 +21,7 @@ imgMat1.addEventListener('click', function(){
   imgMat1.style.border = '0px';
       
   text2.style.fontSize = '25px';
-      text1.style.fontSize = '0px';
+  text1.style.fontSize = '0px';
       
 });
 imgMat2.addEventListener('click', function(){
@@ -33,7 +33,7 @@ imgMat2.addEventListener('click', function(){
   imgMat2.style.border = '0px';
       
   text3.style.fontSize = '25px';
-      text2.style.fontSize = '0px';
+  text2.style.fontSize = '0px';
 });
 imgMat3.addEventListener('click', function(){
   
