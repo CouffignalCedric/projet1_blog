@@ -50,6 +50,9 @@ header {
     margin: 10px;
     padding: 5px;
     border: 5px solid var(--second-color);
+    position: sticky;
+    top: 0px;
+    z-index: 2;
 }
 
 
@@ -108,7 +111,7 @@ a {
     width: 150px;
     height: 50%;
     background-color: rgb(235, 229, 222);
-    left: 2px;
+    left: 0px;
     top: 93px;
     z-index: 1;
     align-items: center;
@@ -120,6 +123,8 @@ a {
 
 .active {
     display: flex;
+    transition: all 1s ease;
+    height: 50%;
 }
 
 .lienMob {
@@ -249,7 +254,7 @@ img {
     width: 200px;
 }
 
-.text2 {
+/* .text2 {
     font-size: 0px;
     text-transform: uppercase;
     text-align: center;
@@ -270,7 +275,9 @@ img {
 .img3 {
     height: 0px;
     border: 0px solid;
-}
+} */
+
+
 
 /* Articles1 2 3 */
 
@@ -303,6 +310,26 @@ footer {
     font-weight: bold;
 }
 
+.cards, .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.cards {
+    gap:30px
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    gap:20px
+}
+
+.card2, .card3 {
+    display: none;
+}
+
 
 /* media queries */
 
@@ -322,7 +349,9 @@ footer {
         display: none;
     }
     
-
+    header{
+        position: relative;
+    }
 
     main {
         display: flex;
@@ -384,5 +413,14 @@ footer {
     }
 
 }
-
+.container-img {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    height: 300px;
+}
+.card img {
+    max-width: 100%;
+    max-height: 100% ;
+}
 /* menu burger */
