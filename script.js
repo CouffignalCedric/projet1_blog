@@ -1,5 +1,29 @@
 
-  // images changent a chaque click
+// click logo pour menu Mobile
+// cible le menu et le logo a cliquer
+const menuMobile= document.querySelector('.menuMobile');
+const logo= document.querySelector('.logoImg');
+
+// creé l'evenement click
+// formule if si ecran inf a 769
+if (outerWidth < 769 ){
+logo.addEventListener('click',function(){
+      // creer class active
+    menuMobile.classList.toggle('active');
+      // supprime le display none du css
+      logo.classList.toggle('fixe-logo');
+    
+           
+})}
+
+
+
+
+
+
+
+
+  // MATERIEL images changent a chaque click
   // cible les img +text 
 const imgMat1 = document.querySelector('.img1');
 const text1 = document.querySelector('.text1');
