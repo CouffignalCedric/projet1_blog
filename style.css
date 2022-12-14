@@ -7,7 +7,7 @@ body {
     background-color: #ebf0ea;
     opacity: 1;
     background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #ebf0ea 5px),
-        repeating-linear-gradient(#dedee555, #dedee5);
+                    repeating-linear-gradient(#dedee555, #dedee5);
     margin: auto;
     font-family: 'Roboto', sans-serif;
 }
@@ -17,6 +17,8 @@ body {
     --primary-color: #81ec8a;
     --font-size: 16px;
     --second-color: #e6aa61;
+    --first-font-family:'Roboto', sans-serif;
+    --second-font-family: 'Indie Flower', cursive;
 }
 
 
@@ -36,6 +38,7 @@ body {
     background-color: var(--primary-color);
     border: 1px solid var(--second-color);
     z-index: 2;
+    
 
 }
 
@@ -53,6 +56,7 @@ header {
     position: sticky;
     top: 0px;
     z-index: 2;
+    cursor: pointer;
 }
 
 
@@ -79,7 +83,7 @@ nav {
     height: 60px;
 }
 
-.button {
+.button ,.buttonCont{
     border-radius: 15px;
     background-color: #e6aa61;
     border: 2px solid;
@@ -90,10 +94,13 @@ nav {
     text-align: center;
     font-size: 15px;
     font-weight: bold;
+    height: 70px;
+text-transform: uppercase;
 
 }
 
-.button:hover {
+
+.button:hover ,.buttonCont:hover {
     background-color: var(--primary-color)
 }
 
@@ -102,6 +109,7 @@ a {
     color: black;
 }
 
+
 /* menu Mobile*/
 
 
@@ -109,7 +117,7 @@ a {
     display: none;
     flex-direction: column;
     width: 150px;
-    height: 50%;
+    height: 30%;
     background-color: rgb(235, 229, 222);
     left: 0px;
     top: 93px;
@@ -118,16 +126,18 @@ a {
     position: fixed;
     justify-content: center;
     border-radius: 15px;
-
+    
+   
+    
 }
 
 .active {
     display: flex;
-    transition: all 1s ease;
-    height: 50%;
+    
 }
 
-.lienMob {
+
+.lienMob, .lienMobCont{
     background-color: white;
     border: 2px solid var(--second-color);
     border-radius: 15px;
@@ -136,6 +146,8 @@ a {
     text-align: center;
     cursor: pointer;
     transition: background-color 0.5s;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .lienMob:hover {
@@ -183,10 +195,13 @@ img {
     align-items: center;
 }
 
-.imgItro {
+#imgIntro{
     width: 200px;
-    border: 2px solid var(--second-color);
-
+    height: 300px;
+    border: 4px solid black;
+    border-radius: 10px;
+    margin: 10px;
+   
 }
 
 .texte-intro {
@@ -200,6 +215,10 @@ img {
     padding-inline: 10px;
     text-align: center;
     margin-block: 10px;
+}
+.imgArticle{
+    width: 200px;
+    height: 300px;
 }
 
 
@@ -252,6 +271,8 @@ img {
     text-transform: uppercase;
     text-align: center;
     width: 200px;
+    font-family: var(--second-font-family);
+    font-weight: bolder;
 }
 
 /* .text2 {
@@ -299,6 +320,22 @@ img {
     text-transform: uppercase;
     text-align: center;
 }
+/* formulaire */
+#form{
+    border: 5px solid var(--primary-color);
+    border-radius: 10%;
+    margin-block: 25px;
+    box-shadow: -15px -11px 11px -2px rgba(236, 170, 68, 0.64);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+input{
+    margin: 15px
+}
 
 /* footer */
 footer {
@@ -341,7 +378,9 @@ footer {
     #matBureau {
         display: none;
     }
-   
+   .logoImg{
+    cursor: pointer;
+   }
 }
 
 @media (min-width: 769px) {
@@ -368,6 +407,7 @@ footer {
         box-shadow: -15px -11px 11px -2px var(--primary-color);
 
     }
+    
 
     #materials {
         display: none;
@@ -411,7 +451,7 @@ footer {
         text-transform: uppercase;
         text-align: center;
     }
-
+/* Cards img materiel */
 }
 .container-img {
     display: flex;
@@ -422,5 +462,36 @@ footer {
 .card img {
     max-width: 100%;
     max-height: 100% ;
+    cursor: pointer;
 }
-/* menu burger */
+.description{
+    font-family: var(--second-font-family);
+    font-size: 23px;
+}
+
+
+
+/* formulaire */
+#form{
+    display: none;
+    border: 5px solid var(--primary-color);
+    border-radius: 10%;
+    margin-block: 25px;
+    box-shadow: -15px -11px 11px -2px rgba(236, 170, 68, 0.64);
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+input{
+    margin: 15px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    
+}
+#message{
+    margin: 15px;
+    border: 2px solid var(--second-color);
+    border-radius: 10px;
+}

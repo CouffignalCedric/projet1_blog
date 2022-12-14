@@ -14,7 +14,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body id="body">
     <header>
 
         <img src="assets/images/logoHops.jpg" alt="logo" class="logoImg">
@@ -28,6 +28,8 @@
             <button class="button"><a href="#article1">la triple?</a></button>
             <button class="button"><a href="#article2">ma derniere recette</a></button>
             <button class="button"><a href="#article3">2400 microbrasserie</a></button>
+            <button class="buttonCont"><a href="#form">Contact</a></button>
+
 
         </nav>
         <!-- menu Mobile -->
@@ -38,6 +40,7 @@
             <a class="lienMob" href="#article1">la triple?</a>
             <a class="lienMob" href="#article2">ma derniere recette</a>
             <a class="lienMob" href="#article3">2400 microbrasserie</a>
+            <a class="lienMobCont" href="#form">Contact</a>
 
 
 
@@ -60,7 +63,7 @@
 
         <section class="intro">
             <div class="imgIntro">
-                <img src="assets/images/Beer.jpg" alt="images">
+                <img class="imgIntro" src="assets/images/Beer.jpg" alt="images">
             </div>
 
             <p class="texte-intro">
@@ -72,8 +75,6 @@
         </section>
 
         <section id="materials">
-
-
 
             <div class="cards">
                 <div class="card card1 ">
@@ -95,7 +96,7 @@
 
                     </div>
                     <p class="description">
-                        cuve de brassage electrique hfhdhfds
+                        fermenteur
                     </p>
                 </div>
                 <div class="card card3 ">
@@ -106,7 +107,7 @@
 
                     </div>
                     <p class="description">
-                        cuve de brassage electrique pppp
+                        capsuleuse
                     </p>
                 </div>
             </div>
@@ -140,11 +141,11 @@
                 </figure>
                 <figure>
                     <img class="img2" src="assets/images/fermenteur.png" alt="images">
-                    <figcaption class="text2">fermenteur</figcaption>
+                    <figcaption class="text1">fermenteur</figcaption>
                 </figure>
                 <figure>
                     <img class="img3" src="assets/images/capsuleuse.png" alt="images">
-                    <figcaption class="text3">capsuleuse</figcaption>
+                    <figcaption class="text1">capsuleuse</figcaption>
                 </figure>
             </div>
 
@@ -160,7 +161,7 @@
 
         <section id="article1">
             <h2 class="titleArticle">la triple?</h2>
-            <img src="assets/images/img (6).jpg" alt="images">
+            <img class= imgArticle src="assets/images/img (6).jpg" alt="images">
             <p class="texte-art">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate quas itaque nihil
                 repellendus ullam
                 inventore, dolore molestias excepturi nobis asperiores fugiat beatae voluptatum est cupiditate officiis
@@ -168,7 +169,7 @@
         </section>
         <section id="article2">
             <h2 class="titleArticle">ma derniere recette</h2>
-            <img src="assets/images/img (5).jpg" alt="images">
+            <img class= imgArticle src="assets/images/romarin.jpg" alt="images">
             <p class="texte-art">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate quas itaque nihil
                 repellendus ullam
                 inventore, dolore molestias excepturi nobis asperiores fugiat beatae voluptatum est cupiditate officiis
@@ -176,7 +177,7 @@
         </section>
         <section id="article3">
             <h2 class="titleArticle">2400 microBrasserie</h2>
-            <img src="assets/images/img (5).jpg" alt="images">
+            <img class= imgArticle src="assets/images/img (5).jpg" alt="images">
             <p class="texte-art">Les Brasseries artisanales sont au nombre de 2400 à fin 2021, elles n’étaient que 200
                 en 2007. Aujourd’hui, il en existe dans toutes les régions.
                 Leur production représente environ 10 % du marché en France. Elles ont dynamisé un marché en baisse
@@ -186,7 +187,38 @@
                 ce que recherche avant tout le consommateur.
                 (source: le rigal de la biere)</p>
         </section>
-
+        <!-- formulaire -->
+        <form id="form">
+            <h2 class="title2">Contact</h2>
+      
+            <label for="firstname">First Name:</label>
+            <input
+              type="text"
+              name="firstname"
+              placeholder="Prenom"
+              id="firstname"
+              value=""
+            />
+            <label for="lastname">Last Name:</label>
+            <input
+              type="text"
+              name="lastname"
+              placeholder="Nom"
+              id="lastname"
+              value=""
+            />
+            <label for="email">Email:</label>
+            <input
+              type="text"
+              name="Email"
+              placeholder="KeLaBiereMousse@gmail.com"
+              id="email"
+              value=""
+            />
+            <label for="zoneTexte">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="23" placeholder="Votre message ici"></textarea>
+            <input type="submit" value="envoyer" />
+          </form>
 
 
 
