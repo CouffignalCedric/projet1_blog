@@ -83,7 +83,16 @@ const formulaire = document.querySelector('#form');
   // // creé l'evenement click boutton du menu mobile
       buttonMob.addEventListener('click', function () {
  
-        formulaire.style.display= "flex"
+        formulaire.style.display= "flex";
    
      })
+
+// contenu texte de l'intro ou article
+
+// const texteIntro = document.querySelector('.texte-intro').textContent =` Brasseur amateur depuis 4 années,
+// C’est suite à un cadeau, consistant à participer à une journée découverte  du brassage chez un brasseur artisanal local , que l'envie m’as pris de m'équiper et de tenter l'expérience en solo.
+// Mes premiers brassins étant plutôt encourageants , je suis aujourd’hui à plus de 30 bières brassées.
+// Toutes différentes car je modifie toujours quelque chose dans mes recettes, rien que de jouer pour une même recette sur la durée,la température d'empâtage, donne une bière différente. Alors avec le houblon et les épices les possibilités sont quasi infinies.
+// Sur ce blog je partage quelques info, n’hesite pas a me contacter pour échanger sur le contenu ou autres.`
+
 
